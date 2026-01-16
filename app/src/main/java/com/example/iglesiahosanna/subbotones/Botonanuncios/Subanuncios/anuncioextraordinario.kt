@@ -73,6 +73,11 @@ class anuncioextraordinario : AppCompatActivity() {
         cargarDatosExtraordinario2()
     }
 
+
+
+
+
+
     private fun cargarDatosExtraordinario1() {
         db.collection("Textos_AnunciosExtraordinarios").document("Anuncio_Extra1")
             .get()
