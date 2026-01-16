@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/casa"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_live"
+        android:icon="@drawable/video"
+        android:title="Conectate" />
+    <item
+        android:id="@+id/nav_announcements"
+        android:icon="@drawable/anuncioss"
+        android:title="Anuncios" />
+    <item
+        android:id="@+id/nav_bible"
+        android:icon="@drawable/bibleicono"
+        android:title="Biblia" />
+    <item
+        android:id="@+id/nav_donate"
+        android:icon="@drawable/dar"
+        android:title="Donar" />
+</menu>

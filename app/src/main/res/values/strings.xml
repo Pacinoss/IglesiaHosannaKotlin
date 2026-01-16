@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Iglesia Hosanna</string>
+    <string name="descripcion_grupos_conexion">Creemos que la fe se vive mejor en <b>comunidad</b>, como un solo cuerpo, donde cada persona vive su propia temporada.</string>
+    <string name="descripcion"> Por eso ofrecemos distintos Grupos de Conexión, pensados para acompañarte según <b>tus necesidades, intereses y aficiones</b>, con la libertad de seguir creciendo y avanzando en cada etapa.</string>
+    <string name="privacy_policy_text">Al enviar esta petición, aceptas nuestra <a href="https://mhglobal.org/politica-de-privacidad">política de privacidad y protección de datos</a>.</string>
+    <string-array name="lider_options">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Divorciado</item>
+        <item>Viudo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "361623572460",
+    "project_id": "iglesia-hosanna-e9497",
+    "storage_bucket": "iglesia-hosanna-e9497.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361623572460:android:e0d6aa8d2ce0b9dc173ac9",
+        "android_client_info": {
+          "package_name": "com.example.iglesiahosanna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNq_VxxL_7MteGKbMUBMFH33qsflosyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
