@@ -37,18 +37,17 @@
 
             <ImageView
                 android:id="@+id/imageanuncionisrael"
-                android:layout_width="400dp"
-                android:layout_height="208dp"
+                android:layout_width="362dp"
+                android:layout_height="199dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="6dp"
                 android:layout_marginEnd="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="Anuncio del Sabado"
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintHorizontal_bias="0.571"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textViewbasetitulo"
                 app:srcCompat="@drawable/anuncio_placeholder" />
 
             <ProgressBar
@@ -63,16 +62,16 @@
 
             <ImageView
                 android:id="@+id/imageanuncionayuno"
-                android:layout_width="400dp"
-                android:layout_height="208dp"
-                android:layout_marginStart="22dp"
+                android:layout_width="362dp"
+                android:layout_height="199dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginEnd="16dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="Anuncio del Sabado"
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.743"
+                app:layout_constraintHorizontal_bias="0.571"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView22"
                 app:srcCompat="@drawable/anuncio_placeholder" />
@@ -91,31 +90,30 @@
                 android:id="@+id/textViewbasetitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
+                android:layout_marginStart="6dp"
                 android:layout_marginTop="-6dp"
                 android:layout_marginEnd="230dp"
-                android:text=""
+                android:text="Titulo del Anuncio1"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.146"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="238dp"
-                android:layout_marginBottom="1dp"
-                android:text=""
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="230dp"
+                android:text="Titulo del Anuncio2"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/imageanuncionayuno"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.209"
+                app:layout_constraintHorizontal_bias="0.153"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -124,50 +122,41 @@
                 android:layout_width="368dp"
                 android:layout_height="349dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="1dp"
                 android:layout_marginEnd="9dp"
-                android:layout_marginBottom="1dp"
-                android:text="TextView"
+                android:text=""
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView29"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.31"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageanuncionisrael" />
-
 
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
-                android:layout_marginTop="1dp"
                 android:layout_marginEnd="14dp"
-                android:layout_marginBottom="8dp"
                 android:gravity="center"
                 android:text="__________________________________________________________"
                 app:layout_constraintBottom_toTopOf="@+id/textView22"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintHorizontal_bias="0.411"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewbasededatos2" />
 
             <TextView
-                android:id="@+id/textView_basedatos"
+                android:id="@+id/textViewbasedatos"
                 android:layout_width="373dp"
                 android:layout_height="400dp"
                 android:layout_marginStart="44dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginEnd="42dp"
-                android:layout_marginBottom="16dp"
-                android:text="TextView"
+                android:text=""
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.561"
+                app:layout_constraintHorizontal_bias="0.513"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageanuncionayuno"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/imageanuncionayuno" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

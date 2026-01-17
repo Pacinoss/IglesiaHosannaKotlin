@@ -45,6 +45,7 @@ class anuncioextraordinario : AppCompatActivity() {
         }
 
          */
+        binding.textViewbasetitulo.text = ""
 
         val imageUrl = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Anuncios%20Extraordinarios%2FAnuncio2ISRAEL.jpg?alt=media&token=913e6cbb-4dbd-4b24-978d-4db7c7ee5c36"
         binding.imageanuncionisrael.load(imageUrl) {
@@ -72,12 +73,6 @@ class anuncioextraordinario : AppCompatActivity() {
         cargarDatosExtraordinario1()
         cargarDatosExtraordinario2()
     }
-
-
-
-
-
-
     private fun cargarDatosExtraordinario1() {
         db.collection("Textos_AnunciosExtraordinarios").document("Anuncio_Extra1")
             .get()
@@ -85,26 +80,8 @@ class anuncioextraordinario : AppCompatActivity() {
                 if (document != null && document.exists()) {
                     val textoDescription = document.getString("Description") // Asume que el campo se llama "extra....."
                     val textTitulo = document.getString("Titulo")
-                    binding.textViewBasedatos.text = textoDescription
+                    binding.textViewbasededatos2.text = textoDescription
                     binding.textViewbasetitulo.text = textTitulo
-                } else {
-                    Log.d("Firebase", "No se encontró el documento")
-                    binding.textViewBasedatos.text = "Contenido no disponible en este momento."
-                }
-            }
-            .addOnFailureListener { exception ->
-                Log.w("Firebase", "Error al obtener el documento: ", exception)
-                binding.textViewBasedatos.text = "Error al cargar el contenido."
-            }
-    }
-
-    private fun cargarDatosExtraordinario2() {
-        db.collection("Textos_AnunciosExtraordinarios").document("Anuncio_Extra2")
-            .get()
-            .addOnSuccessListener { document ->
-                if (document != null && document.exists()) {
-                    val texto = document.getString("Description") // Asume que el campo se llama "extra....."
-                    binding.textViewbasededatos2.text = texto
                 } else {
                     Log.d("Firebase", "No se encontró el documento")
                     binding.textViewbasededatos2.text = "Contenido no disponible en este momento."
@@ -113,6 +90,29 @@ class anuncioextraordinario : AppCompatActivity() {
             .addOnFailureListener { exception ->
                 Log.w("Firebase", "Error al obtener el documento: ", exception)
                 binding.textViewbasededatos2.text = "Error al cargar el contenido."
+            }
+    }
+
+    /**
+     * cargamos datos desde la base de datos
+     */
+    private fun cargarDatosExtraordinario2() {
+        db.collection("Textos_AnunciosExtraordinarios").document("Anuncio_Extra2")
+            .get()
+            .addOnSuccessListener { document ->
+                if (document != null && document.exists()) {
+                    val texto = document.getString("Description") // Asume que el campo se llama "extra....."
+                    val textTitulo2 = document.getString("Titulo")
+                    binding.textViewbasedatos.text = texto
+                    binding.textView22.text = textTitulo2
+                } else {
+                    Log.d("Firebase", "No se encontró el documento")
+                    binding.textViewbasedatos.text = "Contenido no disponible en este momento."
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.w("Firebase", "Error al obtener el documento: ", exception)
+                binding.textViewbasedatos.text = "Error al cargar el contenido."
             }
     }
 
