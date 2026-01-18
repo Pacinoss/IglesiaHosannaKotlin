@@ -108,13 +108,15 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // --- Configuración del Carrusel ---
+        // --- Configuración del Carrusel  y progressBar------
         val filteredUrls = IMAGE_URLS.filter { it.isNotBlank() }
 
         if (filteredUrls.isEmpty()) {
             binding.activitiesCarousel.visibility = View.GONE
         } else {
             binding.activitiesCarousel.visibility = View.VISIBLE
+            binding.carouselProgress.visibility = View.GONE
+
             binding.activitiesCarousel.apply {
                 adapter = CarouselAdapter(filteredUrls)
                 clipToPadding = false

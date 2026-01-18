@@ -56,7 +56,7 @@ class Peticiones : AppCompatActivity() {
                 Snackbar.make(binding.root, "Por favor, completa el nombre y la petición", Snackbar.LENGTH_SHORT).show()
             }
         }
-/*
+/*          //MARK: Solicitar permiso de notificación
         FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
             if (!task.isSuccessful) {
                 Log.w(TAG, "Fetching FCM registration token failed", task.exception)
