@@ -49,7 +49,7 @@ class BotonConectate : AppCompatActivity() {
         val urls = listOf(
             "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Iconos%20Hosanna%2FLogo%20azul%20.png?alt=media&token=64ebdbc5-b85c-4bc3-88d0-3530bf8bd35a",
             "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Iconos%20Hosanna%2Fyoutube.jpeg?alt=media&token=6c15450f-9294-4e15-bcdc-3a2e38544493",
-            "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/facebook.jpeg",
+            "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Iconos%20Hosanna%2Ffacebook.jpeg?alt=media&token=6dbc246c-34df-453b-accb-0cf0ff44e456",
             "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Iconos%20Hosanna%2Finstagram.jpeg?alt=media&token=a56bc274-bb7f-4bed-b4d1-5ab2c06c114a",
             "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Iconos%20Hosanna%2Fspotify.jpeg?alt=media&token=37917044-3da7-4c4d-a7c8-575b85fc42f2"
         )

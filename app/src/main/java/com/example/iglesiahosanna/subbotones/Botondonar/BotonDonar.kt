@@ -36,25 +36,25 @@ class BotonDonar : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val imagenfrendas = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Donativos%20madrid%20tarjerta.jpg"
+        val imagenfrendas = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Donativos%2FDonativos%20madrid%20tarjerta.jpg?alt=media&token=9bb77929-327a-4fdd-99da-64612ee0a429"
         binding.imageButtontarjeta.load(imagenfrendas){
             crossfade(false)
             placeholder(R.drawable.anuncio_placeholder)
         }
 
-        val imagenefectivo = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Donativos%20madrid%20efectivo.jpg"
+        val imagenefectivo = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Donativos%2FDonativos%20madrid%20efectivo.jpg?alt=media&token=1f298b28-50f9-4aeb-8aaf-b74177dbd19f"
         binding.imageButtonefectivo.load(imagenefectivo){
             crossfade(false)
             placeholder(R.drawable.anuncio_placeholder)
         }
 
-        val imagenofreiban = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Donativos%20madrid%20ofrendas.jpg"
+        val imagenofreiban = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Donativos%2FDonativos%20madrid%20ofrendas.jpg?alt=media&token=11aa6f9f-b477-41ec-817c-96c0f2517d3f"
         binding.imageButtonofrendaiban.load(imagenofreiban){
             crossfade(false)
             placeholder(R.drawable.anuncio_placeholder)
         }
 
-        val imagendiezmo = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Donativos%20madrid%20diezmos.jpg"
+        val imagendiezmo = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Donativos%2FDonativos%20madrid%20diezmos.jpg?alt=media&token=7e748439-6d3f-40f0-8fcd-fe54057ca090"
         binding.imageButtondiezmo.load(imagendiezmo){
             crossfade(false)
             placeholder(R.drawable.anuncio_placeholder)

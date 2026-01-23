@@ -94,14 +94,15 @@ class MainActivity : AppCompatActivity() {
         //sirve para bloquear el giro de pantallas
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        val imagenlogo = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Logo%20azul%20.png"
+        val imagenlogo =
+            "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Logo%20azul%20.png"
         binding.logo.load(imagenlogo){
             crossfade(true)
             placeholder(R.drawable.anuncio_placeholder)
         }
 
 
-        val imagenportada = "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Portada_Madrid.jpg"
+        val imagenportada = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Anuncios%20Fijos%2FPortada_Madrid.jpg?alt=media&token=f827622f-666c-49bc-bb9c-09a635911692"
         binding.imageViewportadamadrid.load(imagenportada){
             crossfade(true)
             placeholder(R.drawable.anuncio_placeholder)
