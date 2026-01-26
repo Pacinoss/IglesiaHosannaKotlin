@@ -5,13 +5,17 @@ import android.content.pm.ActivityInfo
 import android.graphics.Paint
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.updatePadding
+import com.example.iglesiahosanna.UI.MainActivity
 import com.example.iglesiahosanna.databinding.ActivityCongregacionesBinding
+import com.example.iglesiahosanna.subbotones.Biblia.Biblia
+import com.example.iglesiahosanna.subbotones.Botonanuncios.BotonAnuncios
+import com.example.iglesiahosanna.subbotones.Botonconectate.BotonConectate
+import com.example.iglesiahosanna.subbotones.Botondonar.BotonDonar
 
 /**
  * Activity que muestra la información de las diferentes congregaciones.
@@ -128,6 +132,48 @@ class Congregaciones : AppCompatActivity() {
      *
      * @return `true` para indicar que el evento ha sido manejado.
      */
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.bottom_navigation_menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_home -> {
+                val intent = Intent(this, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
+
+            R.id.nav_announcements -> {
+                val intent = Intent(this, BotonAnuncios::class.java)
+                startActivity(intent)
+            }
+
+            R.id.nav_live -> {
+                val intent = Intent(this, BotonConectate::class.java)
+                startActivity(intent)
+            }
+
+            R.id.nav_donate -> {
+                val intent = Intent(this, BotonDonar::class.java)
+                startActivity(intent)
+            }
+
+            R.id.nav_bible -> {
+                val intent = Intent(this, Biblia::class)
+                startActivity(intent)
+            }
+
+            else -> return super.onOptionsItemSelected(item)
+        }
+        return true
+    }
+
+    }
+
+
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressedDispatcher.onBackPressed()
         return true
