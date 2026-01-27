@@ -4,6 +4,8 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -94,14 +96,6 @@ class MainActivity : AppCompatActivity() {
         //sirve para bloquear el giro de pantallas
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        val imagenlogo =
-            "https://raw.githubusercontent.com/Pacinoss/Imagenes_Generales_Hosanna/refs/heads/main/Logo%20azul%20.png"
-        binding.logo.load(imagenlogo){
-            crossfade(true)
-            placeholder(R.drawable.anuncio_placeholder)
-        }
-
-
         val imagenportada = "https://firebasestorage.googleapis.com/v0/b/iglesia-hosanna-e9497.firebasestorage.app/o/Anuncios%20Fijos%2FPortada_Madrid.jpg?alt=media&token=f827622f-666c-49bc-bb9c-09a635911692"
         binding.imageViewportadamadrid.load(imagenportada){
             crossfade(true)
@@ -167,11 +161,28 @@ class MainActivity : AppCompatActivity() {
                 else -> true
             }
         }
+
         botonEnlace()
         botonPeticiones()
         botonCongregaciones()
         botonGruposConexion()
         botonTestimonio()
+        }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.bottom_navigation_menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_home -> {
+                val intent = Intent(this, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
+        }
+        return true
     }
 
     /**
@@ -184,7 +195,6 @@ class MainActivity : AppCompatActivity() {
         // Limpia la caché de memoria de Coil para liberar recursos inmediatamente
         imageLoader.memoryCache?.clear()
     }
-
     /**
      * Configura el listener de clic para el enlace de información.
      * Abre una URL externa en el navegador.
@@ -242,4 +252,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

@@ -132,7 +132,8 @@ class Congregaciones : AppCompatActivity() {
      *
      * @return `true` para indicar que el evento ha sido manejado.
      */
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+/*    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         menuInflater.inflate(R.menu.bottom_navigation_menu, menu)
         return true
@@ -171,6 +172,8 @@ class Congregaciones : AppCompatActivity() {
     }
 
     }
+
+ */
 
 
 
